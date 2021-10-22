@@ -2,7 +2,10 @@
 
 Source Code written by DeadPool3333
 
-Converters a given youtube video's link to 3gp, aac, flv, m4a, mp3, mp4, ogg, wav, webm.
+Downlaods Converters a given youtube video's link to 3gp, aac, m4a, mp3.
+
+__Note: __Here you can use any type of file format but some format types may raise __KeyError__ and
+it dint convert the downloaded file it remains in webm file type. You can use webm file also.
 
 ### Installing:
 Youtube_dl: [PyPi](https://pypi.org/project/youtube_dl/), [Github](https://github.com/ytdl-org/youtube-dl)

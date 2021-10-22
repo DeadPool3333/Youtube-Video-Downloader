@@ -9,9 +9,9 @@ def check_url(url: str):
     raise errors.InvalidURL(f'"{url}" is an invalid url.')
 
 def check_format(format: str):
-  formats = ['3gp', 'aac', 'flv', 'm4a', 'mp3', 'mp4', 'ogg', 'wav', 'webm']
+  formats = ['aac', 'm4a', 'mp3', 'wav']
   if not format in formats:
-    raise errors.InvalidFormat(f'"{format}" is an invalid format. Format must be in 3gp, aac, flv, m4a, mp3, mp4, ogg, wav, webm.')
+    raise errors.InvalidFormat(f'"{format}" is an invalid fiel format. Format must be in aac, m4a, mp3, wav.')
 
 
 class YoutubeVideoConverter:
