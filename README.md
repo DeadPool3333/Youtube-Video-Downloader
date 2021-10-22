@@ -4,7 +4,7 @@ Source Code written by DeadPool3333
 
 Downlaods Converters a given youtube video's link to 3gp, aac, m4a, mp3.
 
-__Note: __Here you can use any type of file format but some format types may raise __KeyError__ and
+**Note: **Here you can use any type of file format but some format types may raise **KeyError** and
 it dint convert the downloaded file it remains in webm file type. You can use webm file also.
 
 ### Installing:
