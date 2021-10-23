@@ -28,7 +28,7 @@ class YoutubeVideoConverter:
 
   def convert(self):
     print('Started downloading video from youtube...')
-    ydl_opts = {
+    ytdl_options = {
       'format': 'bestaudio/best',
       'postprocessors': [
         {
@@ -40,7 +40,7 @@ class YoutubeVideoConverter:
         'logger': logger.MyLogger(),
         'progress_hooks': [self.my_hook],
     }
-    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+    with youtube_dl.YoutubeDL(ytdl_options) as ydl:
       try:
         ydl.download([self.url])
       except:
