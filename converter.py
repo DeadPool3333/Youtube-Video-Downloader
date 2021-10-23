@@ -41,5 +41,9 @@ class YoutubeVideoConverter:
         'progress_hooks': [self.my_hook],
     }
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-      ydl.download([self.url])
-      print(f'Successfully converted youtube video to {self.format}.')
+      try:
+        ydl.download([self.url])
+      except:
+        raise errors.InvalidURL('Invalid youtube video url.')
+      else:
+        print(f'Successfully converted youtube video to {self.format}.')
