@@ -12,7 +12,7 @@ To work this abouve one you should remove `line 7` in `main.py` file.
 ### Installing:
 Youtube_dl: [PyPi](https://pypi.org/project/youtube_dl/), [Github](https://github.com/ytdl-org/youtube-dl)
 ```py
-pip install youtube_dl
+pip install -r requirements.txt
 ```
 
 ### How to use:

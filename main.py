@@ -1,4 +1,4 @@
-import converter
+from src import converter
 
 url = str(input('Enter a youtube URL: '))
 converter.check_url(url)
