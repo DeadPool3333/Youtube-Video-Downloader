@@ -23,17 +23,20 @@ Thumbnail: {youtube.thumbnail_url}
 Author: {youtube.author}
 Channel URL: {youtube.channel_url}
 
-Description: {youtube.description}
-'''
+Description: {youtube.description}'''
 print(info)
 
-path = input('Enter the path where you want to store\nor press Enter to store in current path: ')
+path = input(
+    'Enter the path where you want to store\nor press Enter to store in current path: '
+)
 path = path or getcwd()
 
 if not isdir(path):
     raise YVDException(f'{path} is not a valid directory')
 
-filename = input('Enter the filename name to keep it as downloaded file\'s name\nor press Enter to keep it as default name: ')
+filename = input(
+    'Enter the filename name to keep it as downloaded file\'s name\nor press Enter to keep it as default name: '
+)
 filename = filename or 'yt-download'
 filename += '.mp4'
 
@@ -43,4 +46,5 @@ try:
     video.download(path, filename)
 except Exception as e:
     raise YVDException(*e.args)
+
 print('Download completed!')
